@@ -19,3 +19,10 @@ class Solution(object):
                 element_to_row[num] = 0
         return matrix
 
+# test    
+if __name__ == "__main__":
+    s = Solution()
+    print(s.findMatrix([1,3,4,1,2,3,1])) 
+    print(s.findMatrix([1,2,3,4,5])) 
+    print(s.findMatrix([1,1,1,1,1])) 
+    print(s.findMatrix([]))  
