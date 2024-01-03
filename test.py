@@ -25,4 +25,3 @@ if __name__ == "__main__":
     print(s.findMatrix([1,3,4,1,2,3,1])) 
     print(s.findMatrix([1,2,3,4,5])) 
     print(s.findMatrix([1,1,1,1,1])) 
-    print(s.findMatrix([]))  
