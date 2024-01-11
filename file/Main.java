@@ -51,7 +51,7 @@ class GradeRecordManager {
     }
 
     void saveToFile() throws IOException {
-        try (PrintWriter out = new PrintWriter(new FileWriter("grade_records.txt"))) {
+        try (PrintWriter out = new PrintWriter(new FileWriter("data.txt"))) {
             for (Student student : students) {
                 out.println(student.id);
                 out.println(student.name);
@@ -65,7 +65,7 @@ class GradeRecordManager {
 
     void loadFromFile() throws IOException {
         students.clear();
-        try (Scanner in = new Scanner(new FileReader("grade_records.txt"))) {
+        try (Scanner in = new Scanner(new FileReader("data.txt"))) {
             while (in.hasNext()) {
                 int id = in.nextInt();
                 String name = in.next();
