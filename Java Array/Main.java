@@ -4,12 +4,12 @@ public class Main {
     public static void main(String[] args) {
         String[][] students = {
             {"Henchie", "Hechona", "1/24/2001", "Bangkal, Davao City"},
-            {"Dan", "Arnaiz", "1/24/2001", "Bangkal, Davao City"},
-            {"Danilo", "Bacalso", "1/24/2001", "Bangkal, Davao City"},
-            {"Warner", "Abella", "1/24/2001", "Bangkal, Davao City"},
-            {"Harold", "Cayan", "1/24/2001", "Bangkal, Davao City"},
-            {"Delmar", "Larida", "1/24/2001", "Bangkal, Davao City"},
-            {"John", "Bacsal", "1/24/2001", "Bangkal, Davao City"},
+            {"Dan", "Arnaiz", "1/30/2003", "Los Amigos, Davao City"},
+            {"Danilo", "Bacalso", "6/5/2001", "Bankerohan, Davao City"},
+            {"Warner", "Abella", "2/18/2001", "Osaka, Japan"},
+            {"Harold", "Cayan", "6/18/2001", "Green Meadows, Davao City"},
+            {"Delmar", "Larida", "2/17/2001", "Ula, Davao City"},
+            {"John", "Bacsal", "9/28/2001", "Ula, Davao City"},
         };
 
         Scanner scanner = new Scanner(System.in);
