@@ -1,7 +1,7 @@
 import numpy as np
 
 # Define the matrix
-A = np.array([[-8, 5], [0, 7]])
+A = np.array([[6, 0, 0], [-7, 13, 0], [1, 5, 2]])
 
 # The eigenvalues are the diagonal elements of the matrix
 eigenvalues = np.diag(A)
