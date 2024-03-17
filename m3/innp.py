@@ -20,7 +20,3 @@ print("Q (orthonormal basis):", Q)
 print("R (upper triangular matrix):", R)
 
 
-Find the norm of v, and a unit vector, u = (u1, u2, u3) that is oppositely directed to the vector v = (7, 6, -6). Use the fact that if v is any nonzero vector, then v / ||v|| is a unit vector.
-
-||v|| = _____
-u = (_____, _____, _____)
