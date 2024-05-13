@@ -1,6 +1,5 @@
 from user_input_validation import *
 
-# Example usage:
 if __name__ == "__main__":
     integer_input = get_integer_input("Enter an integer: ")
     print("You entered:", integer_input)
