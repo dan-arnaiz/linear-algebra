@@ -1,18 +1,15 @@
 using System;
 
-class Program
-{
-    static void Main()
-    {
-        int sum = 0;
-        int input;
-        Console.Write("Enter an integer: ");
-        do
-        {
-            input = Convert.ToInt32(Console.ReadLine());
-            sum += input;
-        } while (input != 0);
+class MainClass {
 
-        Console.WriteLine("Total Sum: " + sum);
+    static public void Main()
+    {
+        Console.Write("Enter n: ");
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 1; i <= n; i += 2)
+        {
+            Console.Write(i);
+        }
     }
 }
