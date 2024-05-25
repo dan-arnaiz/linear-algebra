@@ -1,23 +1,18 @@
 using System;
 
-class Program
+public class Program
 {
-    static void Main()
+    public static void Main(string[] args)
     {
-        Console.Write("Enter n: ");
-        int n = Convert.ToInt32(Console.ReadLine());
-
-        for (int i = 1; i <= n; i++)
+        while(true)
         {
-            for (int j = n; j > i; j--)
+            Console.Write("Enter letter: ");
+            char letter = Console.ReadLine()[0];
+
+            if (letter == 'C' || letter == 'O' || letter == 'D' || letter == 'E')
             {
-                Console.Write(" ");
+                break;
             }
-            for (int k = 1; k <= 2 * i - 1; k++)
-            {
-                Console.Write("%");
-            }
-            Console.WriteLine();
         }
     }
 }
