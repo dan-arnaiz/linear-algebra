@@ -8,9 +8,12 @@ public class KaryllCaesarCipher {
     }
  
     // Encryption method
-    public static String encrypt(String message, int shift) {
+    public static String encrypt(String message, int shift) throws InterruptedException {
         StringBuilder encryptedMessage = new StringBuilder();
         shift = normalizeShift(shift);
+ 
+        // // Calculate delay per character
+        // long delayPerChar = Math.max(1, 25 / message.length()); // 20 milliseconds
  
         for (char letter : message.toCharArray()) {
             if (Character.isUpperCase(letter)) {
@@ -22,17 +25,19 @@ public class KaryllCaesarCipher {
             } else {
                 encryptedMessage.append(letter);
             }
+            // // Introduce a delay
+            // Thread.sleep(delayPerChar);
         }
  
         return encryptedMessage.toString();
     }
    
     // Decryption method
-    public static String decrypt(String message, int shift) {
+    public static String decrypt(String message, int shift) throws InterruptedException {
         return encrypt(message, 26 - normalizeShift(shift));
     }
  
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Scanner input = new Scanner(System.in);
         boolean continueProgram = true;
  

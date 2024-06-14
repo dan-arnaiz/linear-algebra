@@ -33,3 +33,7 @@ public class DanCaesarCipher {
         System.out.println("Encryption time: " + (endTime - startTime) + " milliseconds");
     }
 }
+
+
+Shift: 5000
+Runtime: 31 milliseconds
